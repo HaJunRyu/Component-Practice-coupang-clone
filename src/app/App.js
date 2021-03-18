@@ -1,25 +1,39 @@
-import './App.scss'
-import logo from 'assets/logo.svg'
+import './App.scss';
+import Logo from 'components/Logo/Logo';
+import Icon from 'components/Icon/Icon';
+import Button from 'components/Button/Button';
+import Checkbox from 'components/Checkbox/Checkbox';
+import Input from 'components/Input/Input';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>src/App.js</code> 문서를 수정하면 실시간 업데이트 됩니다
-        </p>
-        <a
-          className="App-link"
-          href="https://ko.reactjs.org"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          React를 배워보세요
-        </a>
-      </header>
-    </div>
-  )
+    <>
+      <Logo type='color' />
+      <Logo type='mono' />
+      <Logo type='black' />
+      <Icon shape='letter' />
+      <Icon shape='hide' />
+      <Icon shape='show' />
+      <Icon shape='lock' />
+      <Button mode='primary' state='normal'>
+        버튼
+      </Button>
+      <Button mode='primary' state='disabled'>
+        버튼
+      </Button>
+      <Button mode='secondary' state='normal' disabled={true}>
+        버튼
+      </Button>
+      <Button mode='secondary' state='disabled' disabled={true}>
+        버튼
+      </Button>
+      <Checkbox id='autoLogin' checked={true}>
+        자동 로그인
+      </Checkbox>
+      <Input type='email' />
+      <Input type='password' />
+    </>
+  );
 }
 
-export default App
+export default App;
