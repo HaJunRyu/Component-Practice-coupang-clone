@@ -1,0 +1,30 @@
+.signInInput {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 365px;
+  border: 2px solid #cccccc;
+  box-sizing: border-box;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 63px;
+  border-right: 1px solid #cccccc;
+}
+
+.signInInputError {
+  border: 2px solid #e52528;
+}
+
+.errorMessage {
+  display: inline-block;
+  margin: 10px 0 0 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #e52528;
+}

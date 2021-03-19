@@ -4,11 +4,15 @@ import Icon from 'components/Icon/Icon';
 import Button from 'components/Button/Button';
 import Checkbox from 'components/Checkbox/Checkbox';
 import Input from 'components/Input/Input';
+import SignInInput from 'containers/SignInInput/SignInInput';
+import Copyright from 'components/Copyright/Copyright';
+import LoginPage from 'pages/LoginPage/LoginPage';
 
 function App() {
   return (
     <>
-      <Logo type='color' />
+      <LoginPage />
+      {/* <Logo type='color' />
       <Logo type='mono' />
       <Logo type='black' />
       <Icon shape='letter' />
@@ -32,6 +36,9 @@ function App() {
       </Checkbox>
       <Input type='email' />
       <Input type='password' />
+      <SignInInput type='email' shape='message' />
+      <SignInInput type='password' shape='lock' hasError={true} />
+      <Copyright>ⓒCoupang Corp. All rights reserved.</Copyright> */}
     </>
   );
 }

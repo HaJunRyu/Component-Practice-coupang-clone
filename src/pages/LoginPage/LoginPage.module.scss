@@ -1,0 +1,34 @@
+.loginPage {
+  width: 575px;
+  margin: 120px auto 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.logo {
+  margin: 0 auto 16px;
+}
+
+.signInInput {
+  width: 575px;
+  margin: 16px auto 0;
+}
+
+.autoLoginFindIdWrapper {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 22px;
+  margin-bottom: 36px;
+}
+
+.divisionLine {
+  margin: 22px 0;
+}
+
+.copyright {
+  margin: 42px auto 0;
+}
